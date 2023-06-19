@@ -23,7 +23,7 @@
 .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .nav > .nav-links > a {
@@ -33,9 +33,9 @@
   color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
+/* .nav > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .nav > #nav-check {
   display: none;

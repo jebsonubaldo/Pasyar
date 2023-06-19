@@ -5,22 +5,36 @@
 :root {
   --white: #fff;
   --black: #000;
-  --light-blue: #00B8D9;
-  --sky-blue: #1565D8;
-  --navy-blue: #183B56;
-  --deep-midnight-blue: #0D2436;
-  --gray: #C3CAD9;
-  --grey: #959EAD;
+  --light-black: #5a7184;
+  --navy-blue: #183b56;
+  --sky-blue: #1565d8;
+  --light-blue: #00b8d9;
+  --deep-midnight-blue: #0d2436;
+}
+
+#benefits,
+#destinations,
+#about,
+#tips {
+  margin: 0 30px;
 }
 
 html {
   scroll-behavior: smooth;
-} 
+}
+
+section {
+  margin: 50px 0;
+}
 
 .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
 }
 
 .row {
@@ -29,174 +43,102 @@ html {
   flex-wrap: wrap;
 }
 
-#benefits, #destinations, #about {
-  padding: 3rem;
-}
-
 .logo {
   width: 120px;
   height: 40px;
 }
 
-
-/* Typography Start */
-h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
-  color: var(--white);
-}
-
-h2 {
-  font-size: 1.25rem;
-  line-height: 28px;
-  color: var(--white);
-}
-
+/* TYPOGRAPHY */
 h3 {
-  font-size: 1.80em;
-  font-weight: bold;
-  color: var(--navy-blue);
+  font-size: 1.953rem;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 h4 {
+  font-size: 1.563rem;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: #183B56;
 }
 
 h5 {
-  font-size: 1.50rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.2px;
-  color: #183B56;
 }
 
-h6 {
-  font-size: 1.50rem;
-  font-weight: 300;
-  letter-spacing: 0.2px;
-  line-height: 2.75rem;
-  color: #183B56;
+h3,
+h4,
+h5 {
+  color: var(--navy-blue);
 }
 
-.title {
-  font-size: 0.90rem;
+p {
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 16px 0;
+  color: var(--light-black);
+}
+
+span {
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--light-blue);
 }
 
-p {
-  font-size: 1em;
-  padding: 1em 0;
-  line-height: 24px;
-  color: #5A7184;
-}
-
-/* Margin End */
-.mt-050 {
-  padding-top: 0.50rem;
-}
-
-.mb-1 {
-  padding-bottom: 1rem;
-}
-
+/* MARGIN */
 .ml-1 {
-  padding-left: 1rem;
+  margin-left: 16px;
 }
 
 .mr-1 {
-  padding-right: 1rem;
+  margin-right: 16px;
 }
 
-.pt-1 {
-  padding-bottom: 1rem;
+.mt-1 {
+  margin-top: 40px;
 }
 
-.pb-3 {
-  padding-bottom: 3rem;
+.mb-1 {
+  margin-bottom: 40px;
 }
 
-.pb-4 {
-  padding-bottom: 4rem;
+/* PADDING */
+.px-1 {
+  padding: 5px 0;
 }
 
-/* Top Navbar */
-/* .nav-title {
-  width: 200px;
-  height: 150px;
-} */
+.px-2 {
+  padding: 2px 0;
+}
 
-/* Home */
+.py-1 {
+  padding: 0 20px;
+}
+
+/* HOME SECTION */
 #home {
   background-image: url(../images/h1.jpg);
   background-size: cover;
   background-position: center;
   height: 800px;
+  position: relative;
 }
 
-/* .search-form {
-  background-color: var(--white);
-  height: 30rem;
-  width: 25rem;
-  border-radius: 12px;
-  margin-top: 2rem;
-  padding: 1.5rem;
-} */
-
-input .text {
-  display: block;
-  border: 1px solid var(--gray);
-  padding: 0.5rem 0;
-  width: 350px;
-  border-radius: 5px;
-}
-
-.main-heading {
-  margin: 7rem 0 0 0;
-  text-align: center;
-}
-
-.sub-heading , .arrow-down {
-  margin: 2em 0 0 0;
-  text-align: center;
-}
-
-.main-heading .sub-heading , .arrow-down {
-  width: 75%;
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
 }
 
 
-
-.down {
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white); 
-  font-size: 1.5em;
-}
-
-.down:hover {
-  background-color: var(--sky-blue);
-  border: var(--sky-blue);
-}
-
-.explore {
-  width: 250px;
-  height: 200px;
-  background-color: var(--sky-blue);
-  color: var(--white);
-}
-
-
-/* Benefits */
+/* BENEFITS SECTION */
 .heading {
   text-align: center;
   line-height: 1.5em;
@@ -217,7 +159,7 @@ input .text {
   height: 5em;
 }
 
-/* Destinations */
+/* DESTINATIONS SECTION */
 .offers {
   text-align: end;
   font-weight: 700;
@@ -261,7 +203,7 @@ input .text {
 }
 
 .destination-info h5 {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);
 }
@@ -270,7 +212,7 @@ input .text {
   font-size: 0.75rem;
   font-weight: 300;
   color: var(--white);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .destination-info button {
@@ -289,67 +231,44 @@ input .text {
   color: var(--white);
 }
 
-
-/* About Start */
-#about .row:first-child {
-  text-align: center;
+#additional-destinations {
+  display: none;
 }
 
-/* #about img {
-  max-width: 500px;
-  max-height: 600px;
-} */
-
-/* Review Start */
-#review p span {
-  font-size: 1.25rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: #1565D8;
+#additional-destinations.show {
+  display: flex;
 }
 
-#review p {
-  font-size: 1.10rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #183B56;
+/* ABOUT SECTION */
+#about p {
+  text-align: justify;
+}
+.order-1 {
+  order: 0;
 }
 
-
-/* Tips Start */
-#tips .row {
-  text-align: center;
+.order-0 {
+  order: 1;
 }
 
-/* .tip-box {
-  margin: 0 auto;
-} */
-
+/* TIPS SECTION */
 .tip-box img {
-  width: 400px;
+  width: 380px;
   height: 500px;
   border-radius: 10px;
   object-fit: cover;
 }
 
-/* .tip-info h5 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-  color: var(--white);
-} */
-
 .review-box {
   text-align: center;
-  padding: 5rem 0;
+  padding: 4rem 1.5rem;
 }
 
-.review-box span {
-  font-weight: bold;
+em {
+  font-weight: 700;
 }
 
-
-/* Footer Start */
+/* FOOTER */
 footer {
   background-color: var(--deep-midnight-blue);
 }
@@ -359,10 +278,10 @@ ul li span {
 }
 
 ul li {
-  color: var(--grey);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  margin: 1.50rem 0;
+  color: var(--light-black);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  margin: 12px 0;
   line-height: 25px;
 }
 
@@ -388,11 +307,13 @@ ul li {
 }
 
 .footer-top {
-  padding: 3rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .footer-bottom {
-  padding-bottom: 2rem;
+  padding-bottom: 0.75rem;
 }
 
 .qrcode {
@@ -400,9 +321,41 @@ ul li {
   width: 90px;
 }
 
-/* small breakpoint */
+/* BACK TO TOP BUTTON */
+#back-to-top-btn {
+  display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: var(--sky-blue);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+#back-to-top-btn.show {
+  display: flex; /* Show the button when scrolling */
+}
+
+#back-to-top-btn i {
+  font-size: 18px;
+}
+
+#back-to-top-btn i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* SMALL BREAKPOINT */
 @media (min-width: 576px) {
-  section {
+  .heading p {
     width: 100%;
     margin: 0 auto;
   }
@@ -410,146 +363,73 @@ ul li {
   #about h3 {
     width: 100%;
     margin: 0 auto;
-    line-height: 2.50rem;
+    line-height: 2.5rem;
   }
-
-  .heading p {
-    width: 100%;
-    margin: 0 auto;
-  }  
-
-  .sub-heading {
-    padding: 0 1rem;
-  }
-
-  .main-heading {
-    margin: 3rem 0 0 0;
-  }
-
-  /* #destinations h3, #destinations .offers {
-    width: 100%;
-    padding: 0 auto;
-  } */
 }
 
-/* medium breakpoint */
+/* MEDIUM BREAKPOINT */
 @media (min-width: 768px) {
-  #about h3 {
-    width: 90%;
-    margin: 0 auto;
-    line-height: 2.50rem;
-  }
-
   .heading p {
     width: 90%;
     margin: 0 auto;
-  }  
-
-  .main-heading {
-    margin: 3rem 0 0 0;
-  }
-}
-
-/* large breakpoint */
-@media (min-width: 992px) {
-  section {
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  .main-heading {
-    width: 55%;
-    margin: 60px auto 0 auto;
-  }
-  
-  .sub-heading , .arrow-down {
-    width: 65%;
-    margin: 30px auto;
   }
 
   #about h3 {
-    width: 50%;
+    width: 90%;
     margin: 0 auto;
-    line-height: 2.50rem;
+    line-height: 2.5rem;
   }
 
-  #about h5 {
+  #about h4 {
     padding-top: 6rem;
+  }
+
+  .order-md-0 {
+    order: 1;
+  }
+
+  .order-md-1 {
+    order: 0;
+  }
+}
+
+/* LARGE BREAKPOINT */
+@media (min-width: 992px) {
+  #benefits,
+  #destinations,
+  #about,
+  #tips {
+    margin: 0 80px;
   }
 
   .heading p {
     width: 60%;
     margin: 0 auto;
-  }  
+  }
 
-  .about-content,  #tips .row:nth-child(2) {
+  .about-content,
+  #tips .row:nth-child(2) {
     width: 70%;
     margin: 0 auto;
   }
 
-  .about-content h5, .about-content p {
+  .about-content h4,
+  .about-content p {
     width: 380px;
-  }  
-
-  #review {
-    padding: 7rem 0;
-  }
-}
-
-#additional-destinations {
-  display: none;
-}
-
-#additional-destinations.show {
-  display: flex;
-}
-
-.order-1 {
-  order: 1;
-}
-
-.order-0 {
-  order: 0;
-}
-
-@media (min-width: 768px) {
-  .order-md-0 {
-    order: 0;
   }
 
-  .order-md-1 {
-    order: 1;
+  #about h3 {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 2.5rem;
   }
-}
 
-/* Scroll Bar */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-  height: 60px;
-}
+  #about h4 {
+    padding-top: 6rem;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--white); 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--light-blue); 
-  border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--sky-blue); 
-}
-
-small {
-  line-height: 0;
-}
-
-.arrow-down {
-  width: 5%;
-  padding: 0 auto;
+  .review {
+    width: 70%;
+    margin: 0 auto;
+  }
 }

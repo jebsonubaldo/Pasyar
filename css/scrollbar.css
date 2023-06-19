@@ -1,0 +1,37 @@
+/* Scroll Bar */
+:root {
+  --white: #fff;
+  --light-blue: #00b8d9;
+  --sky-blue: #1565d8;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 60px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-blue);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sky-blue);
+}
+
+small {
+  line-height: 0;
+}
+
+.arrow-down {
+  width: 5%;
+  padding: 0 auto;
+}
