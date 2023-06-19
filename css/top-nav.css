@@ -24,6 +24,7 @@
   display: inline;
   float: right;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .nav > .nav-links > a {

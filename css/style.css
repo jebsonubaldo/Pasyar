@@ -53,13 +53,11 @@ h1 {
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 0.3px;
-  color: var(--white);
 }
 
 h2 {
   font-size: 1.25rem;
   line-height: 28px;
-  color: var(--white);
 }
 
 h3 {
@@ -137,14 +135,14 @@ span {
 
 /* HOME SECTION */
 #home {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/1.jpg);
   background-size: cover;
   background-position: center;
   height: 800px;
   position: relative;
 }
 
-#home::before {
+/* #home::before {
   content: "";
   position: absolute;
   top: 0;
@@ -152,12 +150,25 @@ span {
   bottom: 0;
   left: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
+} */
 
 h1, h2 {
   text-align: center;
+  color: var(--white);
 }
 
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+  margin: 40px auto;
+  font-size: 1rem;
+  background-color: var(--sky-blue);
+  color: var(--white);
+  border-radius: 5px;
+}
 
 /* BENEFITS SECTION */
 .heading {
