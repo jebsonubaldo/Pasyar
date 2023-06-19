@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // BACK TO TOP BUTTON
 // Function to check if the user has scrolled enough to show the button
 function checkScroll() {
-  var backButton = document.getElementById("back-to-top-btn");
+  var backButton = document.getElementById('back-to-top-btn');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    backButton.classList.add("show");
+    backButton.classList.add('show');
   } else {
-    backButton.classList.remove("show");
+    backButton.classList.remove('show');
   }
 }
 
@@ -36,19 +36,10 @@ function scrollToTop() {
 }
 
 // Attach the event listeners
-window.onscroll = function () {
+window.onscroll = function() {
   checkScroll();
 };
 
-document.getElementById("back-to-top-btn").onclick = function () {
-  scrollToTop();
-};
-
-// Attach the event listeners
-window.onscroll = function () {
-  checkScroll();
-};
-
-document.getElementById("back-to-top-btn").onclick = function () {
+document.getElementById('back-to-top-btn').onclick = function() {
   scrollToTop();
 };

@@ -328,7 +328,7 @@ ul li {
 }
 
 .footer-top {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem 2rem 1rem 2rem;
 }
@@ -349,30 +349,18 @@ ul li {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  width: 40px;
-  height: 40px;
+  font-size: 1rem;
   background-color: var(--sky-blue);
   color: #fff;
-  border-radius: 50%;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s;
 }
 
 #back-to-top-btn.show {
-  display: flex; /* Show the button when scrolling */
+  display: block; /* Show the button when scrolling */
 }
 
-#back-to-top-btn i {
-  font-size: 18px;
-}
-
-#back-to-top-btn i {
-  color: #fff;
-  font-size: 24px;
-}
 
 /* SMALL BREAKPOINT */
 @media (min-width: 576px) {
